@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>EtchASketch</title>
+</head>
+<body>
+    <header>
+        <h1>Etch A Sketch</h1>
+    </header>
+    
+    <div class="container">
+        <div class="options">
+            <div class="slidecontainer">
+                <p>Choose grid size:</p>
+                <input type="range" min="16" max="100" value="16" step="4" class="slider" id="myRange">
+                <p><span id="sliderValue">16x16</span></p>
+            </div>
+            <div class="color-pick">
+                <button class="black-button choice" value="black">Black</button>
+                <button class="rainbow-button choice" value="rainbow">Rainbow</button>
+                <button class="grayscale-button choice" value="grayscale">Grayscale</button>
+            </div>
+            <div class="bottom-options">
+                <button class="button clear-button">Clear</button>
+            </div>
+        </div>
+        <div class="outside">
+            <div class="inside" draggable="false">
+
+            </div>
+        </div>
+        <div class="options empty">
+        </div>
+    </div>
+</body>
+<script defer src="javascript.js"></script>
+</html>
